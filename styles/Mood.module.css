@@ -1,0 +1,32 @@
+.mood {
+  height: 100%;
+  position: relative;
+}
+
+.mood h2 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: xx-large;
+  font-weight: 600;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1;
+}
+
+.mood:hover h2 {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.lottie {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  height: 100%;
+}
